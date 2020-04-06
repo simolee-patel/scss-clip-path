@@ -1,0 +1,54 @@
+body{
+    background-color:rgb(214, 205, 214);
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: century gothic;
+}
+// .container
+// {
+//     background-color: white;
+//     padding: 25px;
+//     width: 300px;
+// }
+
+.inner{
+    padding: 15px;
+    width: 280px;
+    border-radius:10px;
+    background-color: crimson;
+    clip-path: circle(10% at 90% 18%);
+    transition: clip-path .5s ease-in-out;
+
+    span{
+        color: white;
+        float: right;
+        font-size: large;
+        font-weight: bold;
+        transition: color .5s;
+        position: relative;
+        margin-right: 5%;
+        margin-top: 3px;
+        
+    }
+
+    &:hover span{
+        color: rgba(255,255,255,0);
+    }
+
+    h1{
+        color: white;
+        margin: 0;
+    }
+    p{
+        color: white;
+        margin: 0;
+    }
+    &:hover.inner{
+        clip-path: circle(75%);
+        background-color: midnightblue;;
+    }
+   
+}  
